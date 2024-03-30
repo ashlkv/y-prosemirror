@@ -1,6 +1,6 @@
 {
-  "name": "y-prosemirror",
-  "version": "1.2.3",
+  "name": "@ashlkv/y-prosemirror",
+  "version": "1.2.4",
   "description": "Prosemirror bindings for Yjs",
   "main": "./dist/y-prosemirror.cjs",
   "module": "./src/y-prosemirror.js",
@@ -13,6 +13,7 @@
   },
   "scripts": {
     "dist": "rm -rf dist && rollup -c && tsc",
+    "publish:npm": "npm publish ./ --access public",
     "test": "npm run lint && rollup -c && node dist/test.cjs",
     "lint": "standard && tsc",
     "watch": "rollup -wc",
